@@ -128,9 +128,6 @@ jsonheader_metadata.txtは、処理のための中間ファイルであり、値
 sampleフォルダには、Thesis (学位論文)とBulletin Paper(紀要論文)それぞれについて、マッピング、テンプレート、テストデータをサンプルとしておいています。各WEKO3環境によってアイテムタイプの設定は異なるため、そのままではお使いいただけませんが、設定の際の参考にしてください。またJSON形式パス中の数値を書き換えることで流用できるところもあるはずです。ただし、アイテムタイプ、たとえば図書などでは「subitem_relation_type="isIdenticalTo"」ではなく「relationType="isPartOf"」を使っているなどのケースも考えられ、細かいチェックが必要となりますので、ご注意願います。<br>
 sampleフォルダにはsample_Thesis.bat、sample_BulletionPaper.batの2つのサンプルプログラムを置きました。Windows環境であれば、コマンドプロンプトからこれを実行することで、サンプルデータでWEKO3 Simple Loaderがどのように動作するか試すことができます。
 
-## Copyright
+## Developer
 [Maeda Akira](https://researchmap.jp/genroku)<br>
 orcid: https://orcid.org/0000-0002-4566-8085
-
-## License
-MIT

@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-WEKO3_simple_loader.py ver 0.15b
-maeda.akira@mail.u-tokyo.ac.jp
+WEKO3_simple_loader.py ver 0.17b
 
 usage: (you must setting mapping.txt befor use this script)
   python weko3_simple_loder.py -i input.tsv -m mapping.txt
@@ -23,15 +22,13 @@ def json_mapping(file):
     map_dict = {}
     header_no = {}
     map_file = open(file, "r", encoding="utf-8")
-    header_line = map_file.readline()
-    header_line = header_line.rstrip("\n")
+    header_line = map_file.readline().rstrip("\n")
     i = 0
     for colmns in header_line.split("\t"):
         header_no[colmns] = i
         i += 1
     for line in map_file:
-        line = line.rstrip("\n")
-        colmns = line.split("\t")
+        colmns = line.rstrip("\n").split("\t")
         colmn = {}
         colmn["name"] = colmns[header_no["name"]]
         colmn["config"] = colmns[header_no["config"]]
@@ -54,6 +51,8 @@ def set_map_table(map_dict, header):
         if colmn in map_dict:
             if map_dict[colmn]["value"]:
                 map_table[i] = map_dict[colmn]
+        else:
+            print(colmn + " is ignored")
         i += 1
 
 
@@ -136,7 +135,7 @@ def output_tsv(records, outfile):
     colmns = sorted(
         headers,
         key=lambda x: (
-            headers[x]['sort1'], headers[x]['sort2'], headers[x]['sort3']
+          headers[x]['sort1'], headers[x]['sort2'], headers[x]['sort3']
         )
     )
     colmns = headers

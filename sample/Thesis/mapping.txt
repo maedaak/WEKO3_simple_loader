@@ -1,0 +1,65 @@
+name	config	path1	path2	value	attrib1	attrib2
+.POS_INDEX		.pos_index		#		
+.PUBLISH_STATUS				.publish_status		
+公開日				.metadata.pubdate		
+タイトル	Allow Multiple	.metadata.item_titles		subitem_title		
+タイトル_言語	Allow Multiple	.metadata.item_titles	subitem_title_language	#		
+本文言語	Allow Multiple	.metadata.item_language		subitem_language		
+キーワード	Allow Multiple	.metadata.item_keyword		subitem_subject	subitem_subject_scheme=Other	
+キーワード_言語	Allow Multiple	.metadata.item_keyword	subitem_subject_language	#		
+資源タイプ		.metadata.item_resource_type		resourcetype		
+資源タイプURI		.metadata.item_resource_type		resourceuri		
+その他のタイトル	Allow Multiple	.metadata.item_7_alternative_title_1		subitem_alternative_title		
+著者名	Allow Multiple	.metadata.item_creator	creatorNames[0]	creatorName		
+著者名_言語	Allow Multiple	.metadata.item_creator	creatorNames[0].creatorNameLang	#		
+著者別名	Allow Multiple	.metadata.item_7_full_name_3	names[0]	name		
+著者所属	Allow Multiple	.metadata.item_creator	creatorAffiliations[0].affiliationNames[0]	affiliationName		
+著者所属_言語	Allow Multiple	.metadata.item_creator	creatorAffiliations[0].affiliationNames[0].affiliationNameLang	#		
+刊行年月日		.metadata.item_7_biblio_info_7.bibliographicIssueDates		bibliographicIssueDate	bibliographicIssueDateType="Issued"	
+日本十進分類表	Allow Multiple	.metadata.item_7_subject_13		subitem_subject	subitem_subject_scheme="NDC"	
+抄録	Allow Multiple	.metadata.item_7_description_5		subitem_description	subitem_description_type="Abstract"	
+抄録_言語	Allow Multiple	.metadata.item_7_description_5	subitem_description_language	#		
+内容記述	Allow Multiple	.metadata.item_7_description_6		subitem_description	subitem_description_type="Other"	
+内容記述_言語	Allow Multiple	.metadata.item_7_description_6	subitem_description_language	#		
+出版者	Allow Multiple	.metadata.item_7_publisher_15	subitem_publisher	#		
+出版者_言語	Allow Multiple	.metadata.item_7_publisher_15	subitem_publisher_language	#		
+出版者（別言語）	Allow Multiple	.metadata.item_7_text_16		subitem_text_value		
+掲載誌名	Allow Multiple	.metadata.item_7_biblio_info_7.bibliographic_titles	bibliographic_title	#		
+掲載誌名_言語	Allow Multiple	.metadata.item_7_biblio_info_7.bibliographic_titles	bibliographic_titleLang	#		
+巻		.metadata.item_7_biblio_info_7		bibliographicVolumeNumber		
+号		.metadata.item_7_biblio_info_7		bibliographicIssueNumber		
+開始ページ		.metadata.item_7_biblio_info_7		bibliographicPageStart		
+終了ページ		.metadata.item_7_biblio_info_7		bibliographicPageEnd		
+ISSN	Allow Multiple	.metadata.item_7_source_id_8		subitem_source_identifier	subitem_source_identifier_type="ISSN"	
+ISBN	Allow Multiple	.metadata.item_7_relation_9		subitem_relation_type_id.subitem_relation_type_id_text	subitem_relation_type_id.subitem_relation_type_select="ISBN"	subitem_relation_type="isIdenticalTo"
+フォーマット	Allow Multiple	.metadata.item_7_description_11		subitem_description		
+寄与者	Allow Multiple	.metadata.item_7_text_17		subitem_text_value		
+編者	Allow Multiple	.metadata.item_7_text_18		subitem_text_value		
+翻訳者	Allow Multiple	.metadata.item_7_text_19		subitem_text_value		
+関係URI(URL)	Allow Multiple	.metadata.item_7_relation_28		subitem_relation_type_id.subitem_relation_type_id_text		
+異版である(URL)	Allow Multiple	.metadata.item_7_relation_29		subitem_relation_type_id.subitem_relation_type_id_text	subitem_relation_type="isVersionOf"	
+置換される(URL)	Allow Multiple	.metadata.item_7_relation_30		subitem_relation_type_id.subitem_relation_type_id_text	subitem_relation_type="isReplacedBy"	
+置換する(URL)	Allow Multiple	.metadata.item_7_relation_31		subitem_relation_type_id.subitem_relation_type_id_text	subitem_relation_type="replaces"	
+異版あり(URL)	Allow Multiple	.metadata.item_7_relation_32		subitem_relation_type_id.subitem_relation_type_id_text	subitem_relation_type="hasVersion"	
+別フォーマットあり(URL)	Allow Multiple	.metadata.item_7_relation_33		subitem_relation_type_id.subitem_relation_type_id_text	subitem_relation_type="hasFormat"	
+空間的範囲		.metadata.item_7_geolocation_34.subitem_geolocation_place[0]		subitem_geolocation_place_text		
+時間的範囲		.metadata.item_7_temporal_35		subitem_temporal_text		
+学位名@ja		.metadata.item_7_degree_name_20		subitem_degreename	subitem_degreename_language="ja"	
+学位@en		.metadata.item_7_select_21		subitem_select_item	subitem_select_language="en"	
+学位分野		.metadata.item_7_text_22		subitem_text_value		
+学位授与機関	Allow Multiple	.metadata.item_7_degree_grantor_23.subitem_degreegrantor		subitem_degreegrantor_name		
+学位授与機関識別子（科研）	Allow Multiple	.metadata.item_7_degree_grantor_23.subitem_degreegrantor_identifier		subitem_degreegrantor_identifier_name	subitem_degreegrantor_identifier_scheme="kakenhi"	
+学位授与年月日		.metadata.item_7_date_granted_25		subitem_dategranted		
+学位授与番号		.metadata.item_7_dissertation_number_26		subitem_dissertationnumber		
+学位記番号		.metadata.item_7_text_27		subitem_text_value		
+ファイルパス		.file_path		#		
+ファイル情報#アクセス	Allow Multiple	.metadata.item_files	accessrole	#		
+ファイル情報#ファイル名	Allow Multiple	.metadata.item_files	filename	#		
+ファイル情報#本文URL.ラベル	Allow Multiple	.metadata.item_files	url.label	#		
+ファイル情報#本文URL.オブジェクトタイプ	Allow Multiple	.metadata.item_files	url.objectType	#		
+ファイル情報#本文URL.本文URL	Allow Multiple	.metadata.item_files	url.url	#		
+ファイル情報#フォーマット	Allow Multiple	.metadata.item_files	format	#		
+ファイル情報#ライセンス	Allow Multiple	.metadata.item_files	licensetype	#		
+ファイル情報#公開日	Allow Multiple	.metadata.item_files	date[0].dateValue	#		
+ファイル情報#公開日.タイプ	Allow Multiple	.metadata.item_files	date[0].dateType	#		
+ファイル情報#表示形式	Allow Multiple	.metadata.item_files	displaytype	#		

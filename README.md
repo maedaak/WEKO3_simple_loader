@@ -105,7 +105,7 @@ WEKO3のアイテムimport機能では、メタデータの記述に指定の形
 ### コマンド書式
 以下のコマンドで実行します。出力ファイル名は固定で<strong>jsonheader_metadata.txt</strong>になります。
 
-`python weko3_simple_loder.py -i input.tsv -m mapping.txt`
+`python WEKO3_simple_loader.py -i input.txt -m mapping.txt`
 
 jsonheader_metadata.txtは、処理のための中間ファイルであり、値のセット先のJSON形式パスと値の表になっています。しかし、WEKO3では空値の場合でもJSON形式パスを省略することはできません。そこであらかじめ、必要なデータ項目をすべて記載したテンプレートにデータを流し込みます。
 
